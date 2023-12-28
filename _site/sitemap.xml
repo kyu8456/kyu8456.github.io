@@ -36,4 +36,8 @@
 <loc>http://localhost:4000/licenses/</loc>
 <lastmod>2023-12-27T17:21:36+09:00</lastmod>
 </url>
+<url>
+<loc>http://localhost:4000/my-blog/</loc>
+<lastmod>2023-12-28T15:04:07+09:00</lastmod>
+</url>
 </urlset>

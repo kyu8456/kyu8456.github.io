@@ -21,7 +21,7 @@ baseurl:               "/"
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Starter Kit
+title:                 Youngman
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
@@ -30,32 +30,42 @@ description:           >
   with a focus on personal sites that are meant to impress.
 
 # A shorter description for the sidebar.
-tagline:               Change `tagline` in `_config.yml`
+tagline:               Hello.
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [Robotics]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+#logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <firstname> <lastname>
-  email:               <mail@domain.tld>
+  name:                Youngeon
+  email:               kyu8456@naver.com
   # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+#  instagram:           eeooon_
+#  github: kyu8456
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
-  - title:             About
+  - title:             Robotics
+    url:               /robotics/
+  - title:             Programming
+    url:               /programming/
+  - title:             Project
+    url:               /project/        
+  - title:             About Me
     url:               /about/
+  - title:             Daily
+    url:               /daily/
+##After design finished, the url have to delete.
+  - title:             example
+    url:               /example/
+  - title:             Docs
+    url:               /docs/    
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -68,14 +78,15 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2024. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /:num/
+paginate_path:         '/my-blog/:num/'
+#paginate_path:         '/:num/'
 
 
 # Theme
@@ -91,7 +102,8 @@ remote_theme: hydecorp/hydejack@v9
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          /assets/img/background.png
+#accent_image:          /assets/img/sidebar-bg.jpg
 accent_color:          rgb(79,177,186)
 
 # This is used for the `theme-color` meta tag,
@@ -120,6 +132,7 @@ defaults:
   - scope:
       path:            hyde/
     values:
+#      accent_image:    /assets/img/background.png
       accent_color:    rgb(38,139,210)
       theme_color:     rgb(32,32,32)
       accent_image:
@@ -135,7 +148,8 @@ defaults:
   - scope:
       path:            licenses/
     values:
-      layout:          plain
+      layout:          blog
+#      layout:          plain      
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
@@ -270,10 +284,10 @@ hydejack:
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
     # Set to `true` to always use the dark theme.
-    always:            false
+    always:            true
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
-    dynamic:           true
+    dynamic:           false
 
     # Set to `true` to allow visitors to switch between light and dark mode.
     icon:              true
@@ -325,6 +339,8 @@ include:
 # ----------------------------------------------------------------------------------------
 
 plugins:
+#  - jekyll-paginate
+  - jekyll-paginate
   - jekyll-default-layout
   - jekyll-feed
   - jekyll-optional-front-matter
@@ -362,11 +378,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
+social:
+   name:                <firstname> <lastname>
+   links:
 #     - https://twitter.com/<username>
-#     - https://github.com/<username>
+     - https://github.com/kyu8456
 
 
 # Plugin Configs
