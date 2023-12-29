@@ -57,10 +57,10 @@ menu:
     url:               /programming/
   - title:             Project
     url:               /project/        
-  - title:             About Me
-    url:               /about/
   - title:             Daily
     url:               /daily/
+  - title:             About Me
+    url:               /about/    
 ##After design finished, the url have to delete.
   - title:             example
     url:               /example/
@@ -204,10 +204,12 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [about, newsletter, related, random, comments]
+  post_addons:         [newsletter, random, comments]
+#  post_addons:         [about, newsletter, related, random, comments]  
 
   # Configure the order of complementary content on project pages
-  project_addons:      [about, newsletter, other, comments]
+  project_addons:      [newsletter, other, comments]
+#  project_addons:      [about, newsletter, other, comments]  
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    false
