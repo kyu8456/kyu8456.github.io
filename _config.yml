@@ -204,18 +204,18 @@ kramdown:
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [newsletter, random, comments]
+  post_addons:         [newsletter]
 #  post_addons:         [about, newsletter, related, random, comments]  
 
   # Configure the order of complementary content on project pages
-  project_addons:      [newsletter, other, comments]
+  project_addons:      [newsletter]
 #  project_addons:      [about, newsletter, other, comments]  
 
   # Set to `true` if you don't want to show an icon indicating external links
   no_mark_external:    false
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
+  no_push_state:       true
 
   # Set to `true` if you want to disable the drawer
   no_drawer:           false
@@ -278,7 +278,7 @@ hydejack:
   # Buyers of the PRO version can opt to hide all dates from the theme.
   # Frequent consumers of online content will know that nothing devalues a post like
   # seeing an old date. 
-  hide_dates:          false
+  hide_dates:          true
 
   # TODO
   hide_last_modified:  false
