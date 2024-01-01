@@ -6,7 +6,7 @@
 
 `sudo ubuntu-drivers devices`
 
-![Untitled1](https://github.com/kyu8456/kyu8456.github.io/blob/main/robotics/images/Untitled1.png)
+![Untitled1](https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/Untitled1.png)
 
 드라이버 중 추천해주는 모델을 설치를 진행한다.
 
