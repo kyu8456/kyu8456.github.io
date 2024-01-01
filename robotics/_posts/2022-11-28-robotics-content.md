@@ -16,6 +16,6 @@ nvidia 드라이버 모델 설치가 완료된 것을 확인한다.
 
 `nvidia-smi`
 
-![Untitled2](~/kyu8456.github.io/robotics/images/Untitled2.png)
+![Untitled2](https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/Untitled2.png)
 
 정상적으로 진행이 되었다면 nvidia 드라이버가 설치가 되었으니 그래픽카드로 부터 HDMI를 연결해 디스플레이를 확인할 수 있다.
