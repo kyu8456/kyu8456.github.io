@@ -33,15 +33,14 @@ A _{i-1}^{i} =  \begin{bmatrix} cos(\theta_i) & cos(\alpha_i)sin(\theta_1) & sin
 
 $$
 
-D-H 파라미터 변환 행렬 계산
+### D-H 파라미터 변환 행렬 계산
 
 $$
         T_{0}^{n} = A _{0}^{1} A _{1}^{2}  A _{2}^{3} \dots A _{n-1}^{n} = \begin{bmatrix} R^n_0 & P^n_0 \\ 0 & 1\end{bmatrix}
 $$
 
-전체 변환 행렬 ( 은 n좌표에서 오리엔테이션 행렬, 은 n좌표에서 위치 벡터)
-
-![Untitled](https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/robotics_2/Untitled_3.png)
+전체 변환 행렬 (은 n좌표에서 오리엔테이션 행렬, 은 n좌표에서 위치 벡터)
+![Untitled](https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/robotics_2/Untitled_2.png)
 
 
 ## Ⅲ. 순기구학을 이용하여 각 링크의 관절각을 표현할 수 있는 Matlab 시뮬레이션 프로그램을 구현
