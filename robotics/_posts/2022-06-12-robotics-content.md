@@ -25,13 +25,11 @@
 
 
 $$
-\begin{aligned} %!!15
 A_{i-1}^{i} &= \left[\begin{array}{}
     cos(\theta_i) & cos(\alpha_i)sin(\theta_1) & sin(\alpha_i)sin(\theta_i) & a_icos(\theta) \\
     sin(\theta_i) & cos(\alpha_i)cos(\theta_i) & -sin(\alpha_i)cos(\theta_i) & a_isin(\theta_i) \\
     0 & sin(\alpha_i) & cos(\alpha_i) & d_i \\ 0 & 0 & 0 & 1
     \end{array}\right]
-\end{aligned}
 $$
 
 translation matrix
@@ -66,9 +64,7 @@ Matlab으로 구현한 시뮬레이션이 실제 계산결과와 동일한 결�
 Link의 행렬들을 모두 연산하면
 
 $$
-\begin{aligned} %!!15
 A = 10^3  \begin{bmatrix}0&-0.001&0&0.117 \\ 0.001 & 0 & 0 & 1.1704 \\ 0 & 0  & 0.001 & 1.1272 \\ 0 & 0 & 0 & 0.001 \end{bmatrix}
-\end{aligned}
 $$
 
 위치벡터의 값이 117,1170,1127이므로 End_effector의 좌표 (X,Y,Z) = (117, 1170, 1127)이다. 시뮬레이션 결과와 동일한 것을 확인할 수 있다.
@@ -88,9 +84,7 @@ $$
 - 실제 시뮬레이션 결과 6자유도 협동로봇의 전체 형상 및 움직이는 각도는 θ3 값에 입력 값으로 진행하였다. Cubic Spline의 위치, 속도, 가속도를 그래프로 시간에 대한 변화를 나타내고 마지막 그래프에서는 End-effector의 위치를 나타냈다. Cubic Spline 함수는 아래와 같이 설정하였다.
 
 $$
-\begin{aligned} %!!15
 \theta(t) = A(1-cos(\frac{n\pi}{T})t)
-\end{aligned}
 $$
 
 ![Untitled](https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/robotics_2/Untitled_9.png)
@@ -100,9 +94,7 @@ $$
 - 역기구학은 로봇의 위치가 정의되어 있을 때 현재 로봇의 End-effector에서 θ의 값을 구하기 위해 End-effector의 위치에서 atan2의 함수를 이용해서 기울어진 각도를 반대로 계산해 나가는 과정이다. 이때 atan2를 활용하는 이유는 atan은 θ의 값이 0 ~ 2π으로 지정되어 있어 π의 값에서 tanθ의 값이 발산하는 결과가 발생하기 때문에 atan2는 θ의 값이 -π ~ π 으로 설정되어 tanθ의 값이 불연속인 구간이 없다.
 
 $$
-\begin{aligned} %!!15
 A^i_i-1 = \begin{bmatrix}cos( \theta_i) & -cos(\alpha_i)sin(\theta_i) & sin(\alpha_i)sin(\theta_{i}) & a _{i}cos(\theta) \\ sin(\theta_{i}) & cos(\alpha_{i})cos(\theta_{i}) & -sin(\alpha_{i})cos(\theta_{i}) & a_{i}sin(\theta_{i}) \\ 0 & sin(\alpha_{i}) & cos(\alpha_{i} ) & d_{i} \\ 0 & 0 & 0 & 1 \end{bmatrix}
-\end{aligned}
 $$
 
 변환행렬에서 a의 값이 0이기 때문에 위치 벡터에서의  에서 tanθ의 값이  이기 때문에 값이 없어서 역기구학을 계산할 수 없다.
