@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-07T22:19:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Youngman</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-01-07T22:23:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Youngman</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
 </subtitle><author><name>Youngeon</name><email>kyu8456@naver.com</email></author><entry><title type="html">Robotics Content</title><link href="http://localhost:4000/robotics/2023-12-28-robotics-content/" rel="alternate" type="text/html" title="Robotics Content" /><published>2023-12-28T00:00:00+09:00</published><updated>2023-12-29T00:20:59+09:00</updated><id>http://localhost:4000/robotics/robotics-content</id><content type="html" xml:base="http://localhost:4000/robotics/2023-12-28-robotics-content/">&lt;p&gt;안녕하세요. Robotics,&lt;/p&gt;
 
 &lt;h1 id=&quot;robotics&quot;&gt;ROBOTICS&lt;/h1&gt;
@@ -195,7 +195,7 @@
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/Untitled2.png&quot; alt=&quot;Untitled2&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;정상적으로 진행이 되었다면 nvidia 드라이버가 설치가 되었으니 그래픽카드로 부터 HDMI를 연결해 디스플레이를 확인할 수 있다.&lt;/p&gt;</content><author><name>Youngeon</name><email>kyu8456@naver.com</email></author><category term="robotics" /><summary type="html">ubuntu 22.04 설치 후 nvidia_drive(graphic card) 설치</summary></entry><entry><title type="html">로봇 공학 (1)</title><link href="http://localhost:4000/robotics/2022-06-12-robotics-content/" rel="alternate" type="text/html" title="로봇 공학 (1)" /><published>2022-06-12T00:00:00+09:00</published><updated>2024-01-06T16:47:50+09:00</updated><id>http://localhost:4000/robotics/robotics-content</id><content type="html" xml:base="http://localhost:4000/robotics/2022-06-12-robotics-content/">&lt;p&gt;6자유도 협동로봇의 Matlab 시뮬레이션&lt;/p&gt;
+&lt;p&gt;정상적으로 진행이 되었다면 nvidia 드라이버가 설치가 되었으니 그래픽카드로 부터 HDMI를 연결해 디스플레이를 확인할 수 있다.&lt;/p&gt;</content><author><name>Youngeon</name><email>kyu8456@naver.com</email></author><category term="robotics" /><summary type="html">ubuntu 22.04 설치 후 nvidia_drive(graphic card) 설치</summary></entry><entry><title type="html">로봇 공학 (1)</title><link href="http://localhost:4000/robotics/2022-06-12-robotics-content/" rel="alternate" type="text/html" title="로봇 공학 (1)" /><published>2022-06-12T00:00:00+09:00</published><updated>2024-01-07T22:22:25+09:00</updated><id>http://localhost:4000/robotics/robotics-content</id><content type="html" xml:base="http://localhost:4000/robotics/2022-06-12-robotics-content/">&lt;p&gt;6자유도 협동로봇의 Matlab 시뮬레이션&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/robotics_2/Untitled.png&quot; alt=&quot;Untitled&quot; /&gt;&lt;/p&gt;
 
@@ -226,13 +226,11 @@
 
 &lt;p class=&quot;figcaption&quot;&gt;6 axis D-H parameters&lt;/p&gt;
 
-\[\begin{aligned} %!!15
-A_{i-1}^{i} &amp;amp;= \left[\begin{array}{}
+\[A_{i-1}^{i} = \left[\begin{array}{}
     cos(\theta_i) &amp;amp; cos(\alpha_i)sin(\theta_1) &amp;amp; sin(\alpha_i)sin(\theta_i) &amp;amp; a_icos(\theta) \\
     sin(\theta_i) &amp;amp; cos(\alpha_i)cos(\theta_i) &amp;amp; -sin(\alpha_i)cos(\theta_i) &amp;amp; a_isin(\theta_i) \\
     0 &amp;amp; sin(\alpha_i) &amp;amp; cos(\alpha_i) &amp;amp; d_i \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1
-    \end{array}\right]
-\end{aligned}\]
+    \end{array}\right]\]
 
 &lt;p class=&quot;figcaption&quot;&gt;translation matrix&lt;/p&gt;
 
@@ -262,9 +260,7 @@ A_{i-1}^{i} &amp;amp;= \left[\begin{array}{}
 
 &lt;p&gt;Link의 행렬들을 모두 연산하면&lt;/p&gt;
 
-\[\begin{aligned} %!!15
-A = 10^3  \begin{bmatrix}0&amp;amp;-0.001&amp;amp;0&amp;amp;0.117 \\ 0.001 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1.1704 \\ 0 &amp;amp; 0  &amp;amp; 0.001 &amp;amp; 1.1272 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0.001 \end{bmatrix}
-\end{aligned}\]
+\[A = 10^3  \begin{bmatrix}0&amp;amp;-0.001&amp;amp;0&amp;amp;0.117 \\ 0.001 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1.1704 \\ 0 &amp;amp; 0  &amp;amp; 0.001 &amp;amp; 1.1272 \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0.001 \end{bmatrix}\]
 
 &lt;p&gt;위치벡터의 값이 117,1170,1127이므로 End_effector의 좌표 (X,Y,Z) = (117, 1170, 1127)이다. 시뮬레이션 결과와 동일한 것을 확인할 수 있다.&lt;/p&gt;
 
@@ -288,9 +284,7 @@ A = 10^3  \begin{bmatrix}0&amp;amp;-0.001&amp;amp;0&amp;amp;0.117 \\ 0.001 &amp;
   &lt;li&gt;실제 시뮬레이션 결과 6자유도 협동로봇의 전체 형상 및 움직이는 각도는 θ3 값에 입력 값으로 진행하였다. Cubic Spline의 위치, 속도, 가속도를 그래프로 시간에 대한 변화를 나타내고 마지막 그래프에서는 End-effector의 위치를 나타냈다. Cubic Spline 함수는 아래와 같이 설정하였다.&lt;/li&gt;
 &lt;/ul&gt;
 
-\[\begin{aligned} %!!15
-\theta(t) = A(1-cos(\frac{n\pi}{T})t)
-\end{aligned}\]
+\[\theta(t) = A(1-cos(\frac{n\pi}{T})t)\]
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kyu8456/kyu8456.github.io/main/robotics/images/robotics_2/Untitled_9.png&quot; alt=&quot;Untitled&quot; /&gt;&lt;/p&gt;
 
@@ -300,9 +294,7 @@ A = 10^3  \begin{bmatrix}0&amp;amp;-0.001&amp;amp;0&amp;amp;0.117 \\ 0.001 &amp;
   &lt;li&gt;역기구학은 로봇의 위치가 정의되어 있을 때 현재 로봇의 End-effector에서 θ의 값을 구하기 위해 End-effector의 위치에서 atan2의 함수를 이용해서 기울어진 각도를 반대로 계산해 나가는 과정이다. 이때 atan2를 활용하는 이유는 atan은 θ의 값이 0 ~ 2π으로 지정되어 있어 π의 값에서 tanθ의 값이 발산하는 결과가 발생하기 때문에 atan2는 θ의 값이 -π ~ π 으로 설정되어 tanθ의 값이 불연속인 구간이 없다.&lt;/li&gt;
 &lt;/ul&gt;
 
-\[\begin{aligned} %!!15
-A^i_i-1 = \begin{bmatrix}cos( \theta_i) &amp;amp; -cos(\alpha_i)sin(\theta_i) &amp;amp; sin(\alpha_i)sin(\theta_{i}) &amp;amp; a _{i}cos(\theta) \\ sin(\theta_{i}) &amp;amp; cos(\alpha_{i})cos(\theta_{i}) &amp;amp; -sin(\alpha_{i})cos(\theta_{i}) &amp;amp; a_{i}sin(\theta_{i}) \\ 0 &amp;amp; sin(\alpha_{i}) &amp;amp; cos(\alpha_{i} ) &amp;amp; d_{i} \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 \end{bmatrix}
-\end{aligned}\]
+\[A^i_i-1 = \begin{bmatrix}cos( \theta_i) &amp;amp; -cos(\alpha_i)sin(\theta_i) &amp;amp; sin(\alpha_i)sin(\theta_{i}) &amp;amp; a _{i}cos(\theta) \\ sin(\theta_{i}) &amp;amp; cos(\alpha_{i})cos(\theta_{i}) &amp;amp; -sin(\alpha_{i})cos(\theta_{i}) &amp;amp; a_{i}sin(\theta_{i}) \\ 0 &amp;amp; sin(\alpha_{i}) &amp;amp; cos(\alpha_{i} ) &amp;amp; d_{i} \\ 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 \end{bmatrix}\]
 
 &lt;p&gt;변환행렬에서 a의 값이 0이기 때문에 위치 벡터에서의  에서 tanθ의 값이  이기 때문에 값이 없어서 역기구학을 계산할 수 없다.&lt;/p&gt;</content><author><name>Youngeon</name><email>kyu8456@naver.com</email></author><category term="robotics" /><summary type="html">6자유도 협동로봇의 Matlab 시뮬레이션</summary></entry><entry><title type="html">Project Content</title><link href="http://localhost:4000/project/2021-12-29-project-content/" rel="alternate" type="text/html" title="Project Content" /><published>2021-12-29T00:00:00+09:00</published><updated>2023-12-29T12:37:47+09:00</updated><id>http://localhost:4000/project/project-content</id><content type="html" xml:base="http://localhost:4000/project/2021-12-29-project-content/">&lt;p&gt;안녕하세요. Project,&lt;/p&gt;
 

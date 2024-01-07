@@ -25,7 +25,7 @@
 
 
 $$
-A_{i-1}^{i} &= \left[\begin{array}{}
+A_{i-1}^{i} = \left[\begin{array}{}
     cos(\theta_i) & cos(\alpha_i)sin(\theta_1) & sin(\alpha_i)sin(\theta_i) & a_icos(\theta) \\
     sin(\theta_i) & cos(\alpha_i)cos(\theta_i) & -sin(\alpha_i)cos(\theta_i) & a_isin(\theta_i) \\
     0 & sin(\alpha_i) & cos(\alpha_i) & d_i \\ 0 & 0 & 0 & 1
